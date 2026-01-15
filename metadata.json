@@ -1,0 +1,5 @@
+{
+  "name": "VersaTool Hub - Standalone",
+  "description": "A high-performance, standalone online utility station featuring developer tools and text processors. No CMS required.",
+  "requestFramePermissions": []
+}
