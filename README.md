@@ -2,7 +2,15 @@
 
 多功能开发者工具集合（独立部署版本），基于 React + Vite 构建，可本地运行，也可作为独立应用部署到任意支持静态资源托管的平台。
 
-> 本仓库来源于 Google AI Studio 导出的应用代码，并在此基础上做了本地化、嵌入模式兼容、类型检查等方面的优化。
+
+![网站预览](pic/PixPin_2026-01-15_16-27-58.png)
+
+
+#阿里云ESA Pages #阿里云云工开物
+
+本项目是**阿里云 ESA (Edge Security Acceleration) 边缘计算创新大赛**的创意参赛作品。
+
+借助 **阿里云 ESA** 强大的边缘计算能力，我们将这个富交互的静态网站分发到全球节点，确保用户在世界任何角落都能体验到闪电般的加载速度。
 
 ## 功能概览
 
@@ -124,10 +132,22 @@ npm run preview
 
 ## 部署建议
 
-- 构建完成后，将 `dist/` 目录内容上传至任何静态站点托管平台即可使用
+- 构建完成后，将 `dist/` 目录内容上传至阿里云esa平台即可使用
 - 如需配合 iframe 嵌入，请确保目标站点未对本应用域名设置过于严格的 `frame-ancestors` 或 `X-Frame-Options`
 - 如需在生产环境中自定义标题、图标或 SEO 元信息，可根据需要修改 `index.html`
 
-## 许可证
+## ⚠️ 部署故障排除 (Troubleshooting)
 
-本项目采用 MIT License 授权，详情见仓库中的 `LICENSE` 文件。
+如果你在部署时遇到错误：`code version number exceeds the quota limit`，这意味着你的阿里云 ESA 项目版本数量已达上限。
+
+**解决方案:**
+1. 登录 [阿里云 ESA 控制台](https://esa.console.aliyun.com/)。
+2. 进入你的项目 -> **版本管理 (Versions)** (或边缘程序 Edge Routines)。
+3. 删除旧的、不再使用的版本以释放配额。
+4. 重新提交部署。
+
+---
+
+## 声明
+“本项目由阿里云ESA提供加速、计算和保护”
+![Aliyun ESA Pages](pic/aliyunesapages.png)
